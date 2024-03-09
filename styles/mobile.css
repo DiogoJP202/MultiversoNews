@@ -9,6 +9,10 @@
     font-family: "Source Serif 4", serif;
 }
 
+.overfHidden{
+    overflow: hidden;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -31,6 +35,7 @@ nav{
     margin: 5px;
     padding: 1px;
     border: 4px solid #000;
+    z-index: 3;
 }
 
 #logo > img{
@@ -51,7 +56,6 @@ nav a:hover{
     color: #fff;
 }
 
-
 nav  a:nth-of-type(even){ display: none; }
 
 .menuH {
@@ -59,6 +63,7 @@ nav  a:nth-of-type(even){ display: none; }
     height: 40px;
     margin: 5px;
     cursor: pointer;
+    z-index: 3;
 }
 
 .bar {
@@ -71,11 +76,79 @@ nav  a:nth-of-type(even){ display: none; }
 }
 
 #line{
+    position: relative;
     width: 98%;
     height: 1px;
     margin: auto;
     border-radius: 1px;
     background-color: #000;
+    z-index: 3;
+}
+
+#telaMenu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 2;
+    transition: 1s ease-out;
+}
+
+#headerMenu{
+    height: 80px;
+}
+
+#telaMenu .linksMenu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Limelight", sans-serif;
+    font-size: 2em;
+    color: #000;
+    text-decoration: none;
+}
+
+#telaMenu .linksMenu:hover::after{
+    content: url(../imgs/Hand2.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-90deg);
+}
+
+#telaMenu .linksMenu:hover::before{
+    content: url(../imgs/Hand2.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-90deg) scaleY(-1);
+}
+
+#footerMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+}
+
+#footerMenu #logo{
+    width: 100px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+#footerMenu > p > a{
+    color: #fff;
+    text-shadow: 1px 1px 4px #fff;
+    text-decoration: dotted;
 }
 
 article{

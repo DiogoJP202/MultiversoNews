@@ -1,4 +1,6 @@
+const body = document.querySelector("body");
 const barras = document.querySelectorAll(".bar"); // Capturando as barras do menu Hambúrger.
+const telaMenu = document.querySelector("#telaMenu"); // Capturando a tela do menu Hambúrger.
 let menuAtivado = false;
 
 document.addEventListener("click", event => {
@@ -11,6 +13,8 @@ document.addEventListener("click", event => {
             menu[0].style.transform = "rotate(0deg) translate(0px, 0px)";
             menu[1].style.opacity = "1";
             menu[2].style.transform = "rotate(0deg) translate(0px, 0px)";
+            body.classList.remove("overfHidden");
+            telaMenu.style.display = "none";
 
             return menuAtivado = false;
         };
@@ -19,6 +23,8 @@ document.addEventListener("click", event => {
         menu[0].style.transform = "rotate(-45deg) translate(-8px, 8px)";
         menu[1].style.opacity = "0";
         menu[2].style.transform = "rotate(45deg) translate(-8px, -8px)";
+        body.classList.add("overfHidden");
+        telaMenu.style.display = "flex";
 
         menuAtivado = true;
     };
