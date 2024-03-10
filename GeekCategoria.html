@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black And White Geek</title>
+    <link rel="stylesheet" href="styles/mobile.css" media="all">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <style>
+        .titulo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            height: 145px;
+        }
+
+        .titulo img{
+            width: 250px;
+        }
+
+        .titulo h1{
+            position: relative;
+            top: -70px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .noticiaP{
+            margin: 10px;
+        }
+
+        .noticiaP img{
+            display: block;
+            margin: 10px auto;
+            width: 100%;
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0px 0px 4px #000;
+        }
+
+        .tituloP{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .tituloP h2{
+            width: 50%;
+            color: #fff;
+            text-indent: 15px;
+            background-color: #000;
+        }
+
+        .tituloP:nth-child(2):after{
+            content: url(imgs/Hand2.png);
+            transform: rotate(-90deg);
+        }
+
+        .tituloP:nth-child(1) h2{
+            width: 100%;
+        }
+
+        h3{
+            padding: 10px;
+            font-size: 1.3em;
+        }
+
+        .noticiaA{
+            box-shadow: 0px 0px 5px #000;
+            border-radius: 10px;
+        }
+
+        .tituloA h2{
+            width: 100%;
+            padding: 5px;
+            color: #fff;
+            background-color: #000;
+        }
+
+        .noticiaAs{
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+            border-bottom: 1px solid #000;
+        }
+
+        .noticiaAs:last-of-type{
+            border-bottom: 0px;
+        }
+
+        .noticiaAs h2{
+            font-size: 1em;
+            padding-bottom: 10px;
+        }
+
+        .noticiaAs p{
+            font-size: 0.8em;
+        }
+
+        .noticiaAs img{
+            width: 75px;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imgs/Logo.png" alt="Logo Da Old School Comics">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="TecnologiaCategoria.html">Tecnologia</a>
+            <a href="GamesCategoria.html">Games</a>
+            <a href="SegurançaCategoria.html">Segurança</a>
+            <a href="AnimesCategoria.html">Animes</a>
+        </nav>
+        <div class="menuH">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <div id="line"></div>
+    <div class="titulo">
+        <img src="imgs/TitlesCategories.png" alt="mickey e minnie">
+        <h1>GEEK</h1>
+    </div>
+    <div id="telaMenu">
+        <div id="headerMenu"> </div>
+        <a href="#" class="linksMenu">MUNDO GEEK</a>
+        <a href="#" class="linksMenu">TECNOLOGIA</a>
+        <a href="#" class="linksMenu">GAMES</a>
+        <a href="#" class="linksMenu">SEGURANÇA</a>
+        <a href="#" class="linksMenu">ANIME</a>
+        <div id="footerMenu">
+            <div id="logo">
+                <img src="imgs/Logo.png" alt="Logo Da Old School Comics">
+            </div>
+            <p id="meusDireitos">© <a href="https://github.com/diogojp202" target="_blank">Diogo Antonny Santos Soares</a></p>
+        </div>
+    </div>
+    <main>
+        <article>
+            <section class="noticiaP">
+                <img src="imgs/MouseGame.jpg" alt="Jogo de video-game do mickey">
+                <div class="tituloP">
+                    <h2>Mickey FPS</h2>
+                </div>
+                <h3>Esse jogo de tiro em primeira pessoa com estilo de desenho animado retrô chamado Mouse tem um enorme potencial.</h3>
+                <p class="autor">Ruby Innes</p>
+                <p class="resumo">
+                    O design visual do Cuphead é profundamente esteticamente agradável e uma bela homenagem aos estilos de animação do passado, então faz todo sentido que mais jogos estejam buscando inspiração no passado em termos de direção de arte. Eis que surge Mouse, um título futuro da Fumi Games.
+                </p>
+            </section>
+        </article>
+        <aside>
+            <section class="noticiaA">
+                <div class="tituloA">
+                    <h2>Pac-Man Exige Pausa para Almoço: 'Cansado de Comer Pontinhos'</h2>
+                </div>
+                <img src="imgs/PacMan.jpg" alt="Imagem do pacman">
+                <h3>O Come-Come Quer Desfrutar de uma Refeição Adequada e Reclama da Monotonia Alimentar em Seu Mundo Labiríntico.</h3>
+                <p class="autor">Ruby Innes</p>
+            </section>
+
+            <section class="noticiaA">
+                <div class="tituloA">
+                    <h2>Sonic Processa Empresa de Tênis por 'Incentivar Velocidade Ilegal'</h2>
+                </div>
+                <img src="imgs/sonic.jpg" alt="Imagem do pacman">
+                <h3>Ouriço Azul Alega que Novo Modelo de Tênis Pode Causar Corridas a Velocidades Supersônicas sem Controle.</h3>
+                <p class="autor">Leonardo S.</p>
+            </section>
+        </aside>
+        <article>
+            <section class="noticiaP">
+                <div class="tituloP">
+                    <h2>Animes e Mangas</h2>
+                </div>
+                <img src="imgs/HellSing.jpg" alt="alucard de hellsing">
+                <div class="textos">
+                    <h3>Alucard Deixa o Cofre! Hellsing Corporation Anuncia Novo Plano de Marketing com Vampiro Voraz</h3>
+                    <p class="autor">Albert Feraz</p>
+                    <p class="resumo">
+                        Em uma reviravolta surpreendente no mundo das trevas, o que um dia foi temido como o último vampiro supremo agora emerge das sombras para assumir um papel improvável: o de influenciador da noite. Sob o lema "De Bebedor de Sangue a Influenciador da Noite", o misterioso ser noturno revelou sua verdadeira identidade ao mundo e busca redefinir sua imagem, tornando-se o rosto de uma marca única e intrigante.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <section class="noticiaAs">
+                <div class="textos">
+                    <div>
+                        <h2>Cosplayes Loucos</h2>
+                    </div>
+                    <p>Cosplayers Invadem Convenção de Tênis: 'O Combate Épico entre Adidas e Nike'</p>
+                </div>
+                <img src="imgs/Cosplay.jpg" alt="Cosplay do bart">
+            </section>
+
+            <section class="noticiaAs">
+                <div class="textos">
+                    <div>
+                        <h2>Café Energy</h2>
+                    </div>
+                    <p>Desenvolvedor de Jogos Descobre Café que Transforma Código em Linhas Mais Eficientes</p>
+                </div>
+                <img src="imgs/the_caffeine_curve.jpg" alt="Fórmula química do café">
+            </section>
+
+            <section class="noticiaAs">
+                <div class="textos">
+                    <div>
+                        <h2>Segredo da frota</h2>
+                    </div>
+                    <p>Revelado o Plano Secreto da Frota Estelar: 'Trocar Warp Drive por Uber Espacial'</p>
+                </div>
+                <img src="imgs/Starbase_84.jpg" alt="Nave espacial">
+            </section>
+
+            <section class="noticiaAs">
+                <div class="textos">
+                    <div>
+                        <h2>Hieróglifos Geek</h2>
+                    </div>
+                    <p>Arqueólogos Descobrem Antigos Hieróglifos Geek: 'Os Nerds Já Dominavam o Egito Antigo'</p>
+                </div>
+                <img src="imgs/Hieróglifos.jpg" alt="Hieróglifos de star wars">
+            </section>
+        </aside>
+        <div id="email">
+            <div class="conteudoEmail">
+                <h2>Assine e nos envie sugestões!</h2>
+                <fieldset>
+                    <legend>Seu Email</legend>
+                    <input type="email" name="Imail" id="Imail" placeholder="Endereço De Email">
+                </fieldset>
+                <img src="imgs/hand4.png" alt="Mãozinha Cartoon" id="maoCartoon">
+                <button type="button"><img src="imgs/hand3.png" alt="Mãozinha" class="hand"> Enviar <img src="imgs/hand3.png" alt="Mãozinha" class="hand"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="logo">
+            <img src="imgs/Logo.png" alt="Logo Da Old School Comics">
+        </div>
+        <img src="imgs/ProaLogo.jpg" alt="Logo do Proa">
+        <p id="direitos">
+            © Diogo antonny. Todos os direitos reservados. MultiversoNews pode ganhar uma parte das vendas de produtos adquiridos através do nosso site como parte de nossas parcerias afiliadas com varejistas. O material deste site não pode ser reproduzido, distribuído, transmitido, armazenado em cache ou de outra forma utilizado, exceto com a permissão prévia por escrito da OldSchoolComics.
+        </p>
+        <p id="meusDireitos">© <a href="https://github.com/diogojp202" target="_blank">Diogo Antonny Santos Soares</a></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

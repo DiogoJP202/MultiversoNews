@@ -153,8 +153,16 @@ nav  a:nth-of-type(even){ display: none; }
 
 article{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.noticiasCentro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .noticiasPrincipais{
@@ -167,6 +175,7 @@ article{
 
 .noticia{
     width: 95%;
+    max-width: 350px;
     border-radius: 15px;
     box-shadow: 0 0 5px #000;
 }
@@ -207,6 +216,8 @@ article{
 
 .noticiasRecentes{
     width: 95%;
+    max-width: 350px;
+    margin: 10px auto;
 }
 
 .noticiasRecentes h2{
@@ -240,17 +251,14 @@ article{
     border-bottom: 1px solid #000;
     margin: 10px;
 }
-
-.noticiaR:nth-of-type(6),.noticiaR:nth-of-type(7){
-    display: none;
-}
-
 .conteudo{
     display: flex;
+    align-items: center;
 }
 
 .conteudo > img{
     width: 70px;
+    height: 70px;
     margin-left: 20px;
 }
 
@@ -265,7 +273,8 @@ article{
 
 .noticiaA{
     width: 95%;
-    margin: 25px auto;
+    max-width: 300px;
+    margin-top: 25px;
 }
 
 .noticiaA h2{
@@ -294,17 +303,69 @@ article{
     text-align: left;
 }
 
-.noticiaA .subnoticia{
+ .noticiaA .subnoticia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
     border-top: 1px solid #000;
 }
 
-.noticiaA .subnoticia h3{
+#NoticiasSegundarias .noticiaA .subnoticia{
+    margin: 10px;
+}
+
+#NoticiasSegundarias .noticiaA .subnoticia h3{
     font-size: 1em;
 }
 
+#NoticiasSegundarias .noticiaA .subnoticia .conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#NoticiasSegundarias .noticiaA .subnoticia img{
+    width: 70px;
+    height: 70px;
+}
+
+#NoticiasSegundarias{
+    display: flex;
+    justify-content: center;
+}
+
+#NoticiasSegundarias > .noticiaA{
+    max-width: none;
+}
+
+#NoticiasSegundarias > .noticiaA > img{
+    height: 400px;
+}
+
+#NoticiasSegundarias > .noticiaA h2{
+    text-align: center;
+}
+
+#NoticiasSegundarias .subtitulo{
+    font-weight: 700;
+}
+
 #email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
     border-top: 1px solid #000;
+    background-image: url(../imgs/LooneyTunesBackground.jpg);
+    background-position: center center;
+}
+
+.conteudoEmail{
+    height: 310px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
 }
 
 .conteudoEmail h2{
@@ -376,8 +437,9 @@ footer img{
     width: 50px;
 }
 
-footer p{
+#direitos{
     padding: 10px;
+    max-width: 600px;
 }
 
 footer > p > a{

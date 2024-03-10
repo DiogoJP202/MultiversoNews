@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black And White Geek</title>
+    <link rel="stylesheet" href="styles/mobile.css" media="all">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <style>
+        #Informacoes{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        #Informacoes #autor{
+            background-color: #000;
+            color: #fff;
+            padding: 15px 10px;
+        }
+
+        #Informacoes p{
+            font-size: 1.2em;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h1{
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        article{
+            flex-direction: column;
+        }
+        
+        article .resumo{
+            max-width: 300px;
+            margin: 0 auto 20px auto;
+            background-color: #8080801a;
+            border: 1px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 3px #000;
+        }
+
+        #imagens{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: flex-start;
+            justify-content: center;
+        }
+
+        article .imagemArtigo{
+            width: 100%;
+            max-width: 700px;
+            margin: 10px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #000;
+        }
+
+        p{
+            padding: 5px 20px;
+        }
+
+        @media screen and (min-width: 750px){
+            article .resumo{
+                max-width: none;
+                margin: 0 auto 20px auto;
+                font-size: 1.2em;
+                background-color: #fff;
+                border: 0;
+                border-radius: 0p;
+                box-shadow: 0 0 0 #000;
+            }
+            
+            article #imagens{
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imgs/Logo.png" alt="Logo Da Old School Comics">
+        </div>
+        <nav>
+            <a href="GeekCategoria.html">Geek</a>
+            <a href="TecnologiaCategoria.html">Tecnologia</a>
+            <a href="GamesCategoria.html">Games</a>
+            <a href="SegurançaCategoria.html">Segurança</a>
+            <a href="AnimesCategoria.html">Animes</a>
+        </nav>
+        <div class="menuH">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <div id="line"></div>
+    <div id="telaMenu">
+        <div id="headerMenu"> </div>
+        <a href="#" class="linksMenu">MUNDO GEEK</a>
+        <a href="#" class="linksMenu">TECNOLOGIA</a>
+        <a href="#" class="linksMenu">GAMES</a>
+        <a href="#" class="linksMenu">SEGURANÇA</a>
+        <a href="#" class="linksMenu">ANIME</a>
+        <div id="footerMenu">
+            <div id="logo">
+                <img src="imgs/Logo.png" alt="Logo Da Old School Comics">
+            </div>
+            <p id="meusDireitos">© <a href="https://github.com/diogojp202" target="_blank">Diogo Antonny Santos Soares</a></p>
+        </div>
+    </div>
+    <main>
+        <div id="Informacoes">
+            <div id="autor">Leandro Augusto M.</div>
+            <p>
+                GEEK <br> 03/05/2024
+            </p>
+            <img src="imgs/hand5.png" alt="Mãozinha cartoon">
+        </div>
+        <article>
+            <h1><strong>Mickey</strong> e a <strong>Minnie</strong>, serão de domínio público</h1>
+            <p class="resumo">
+                Os ícones da <strong>Disney</strong>, <strong>Mickey</strong> e <strong>Minnie Mouse</strong>, estão prestes a serem compartilhados com o mundo: o futuro da dupla adorável como patrimônio público.
+            </p>
+            <div id="imagens">
+                <img src="imgs/MickeyEMinie.gif" alt="Mickey e Minie Dançando" class="imagemArtigo">
+                <img src="imgs/Propaganda6.jpg" alt="" class="propaganda">
+            </div>
+            <p>
+                Em uma reviravolta mágica, os famosos ratinhos Mickey e Minnie Mouse, que há décadas encantam crianças e adultos ao redor do mundo, estão a caminho de se tornarem propriedade pública. Isso marca um acontecimento significativo na história da cultura pop e dos direitos autorais, conforme os personagens icônicos da Disney se preparam para dar um novo passo em direção à liberdade.
+            </p>
+            <p>
+                A mudança é resultado de alterações nas leis de direitos autorais, que estabelecem um período limitado de proteção para criações artísticas antes de serem disponibilizadas para o público em geral. A data marcante para Mickey e Minnie Mouse é 05/03/2024, quando suas imagens, anteriormente guardadas a sete chaves, serão desbloqueadas para o domínio público.
+            </p>
+            <p>
+                O ratinho de orelhas redondas e sua amada Minnie, conhecida por seu charme e vestidos de bolinhas, conquistaram corações desde suas estreias em curtas-metragens animados nas décadas de 1920 e 1930. Agora, sua transição para o domínio público promete abrir portas para novas interpretações, adaptações e uma infinidade de possibilidades criativas.  
+            </p>
+            <p>
+                A Disney, que construiu um império em torno desses personagens, ainda detém os direitos sobre várias encarnações específicas dos personagens, mas a entrada no domínio público permite que outros criadores explorem e reinventem esses ícones de maneiras antes inimagináveis.
+            </p>
+            <p>
+                Embora Mickey e Minnie estejam prestes a se libertar de suas amarras legais, seu legado e impacto cultural continuarão a ecoar nas gerações futuras. A entrada no domínio público marca não apenas o fim de uma era legal, mas também o início de um novo capítulo, repleto de possibilidades criativas e homenagens à magia que esses personagens trouxeram ao mundo ao longo dos anos.
+            </p>
+        </article>
+        <div id="email">
+            <div class="conteudoEmail">
+                <h2>Assine e nos envie sugestões!</h2>
+                <fieldset>
+                    <legend>Seu Email</legend>
+                    <input type="email" name="Imail" id="Imail" placeholder="Endereço De Email">
+                </fieldset>
+                <img src="imgs/hand4.png" alt="Mãozinha Cartoon" id="maoCartoon">
+                <button type="button"><img src="imgs/hand3.png" alt="Mãozinha" class="hand"> Enviar <img src="imgs/hand3.png" alt="Mãozinha" class="hand"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="logo">
+            <img src="imgs/Logo.png" alt="Logo Da Old School Comics">
+        </div>
+        <img src="imgs/ProaLogo.jpg" alt="Logo do Proa">
+        <p id="direitos">
+            © Diogo antonny. Todos os direitos reservados. MultiversoNews pode ganhar uma parte das vendas de produtos adquiridos através do nosso site como parte de nossas parcerias afiliadas com varejistas. O material deste site não pode ser reproduzido, distribuído, transmitido, armazenado em cache ou de outra forma utilizado, exceto com a permissão prévia por escrito da OldSchoolComics.
+        </p>
+        <p id="meusDireitos">© <a href="https://github.com/diogojp202" target="_blank">Diogo Antonny Santos Soares</a></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
