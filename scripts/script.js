@@ -28,4 +28,10 @@ document.addEventListener("click", event => {
 
         menuAtivado = true;
     };
+
+    if(element.classList.contains('btn')){
+        setTimeout(()=>{
+            let btn = document.querySelector(".btn");
+        },)
+    }
 });

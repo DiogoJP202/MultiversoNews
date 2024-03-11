@@ -128,7 +128,7 @@
             }
              
             #noticiasPrincipais article{
-                width: 50%;
+                width: 60%;
             }
         
             article{
@@ -138,7 +138,7 @@
 
             aside:nth-of-type(1){
                 margin: 10px;
-                border-left: 1px solid #000;
+                border-left: 0;
             }
 
             aside:nth-child(3){
@@ -150,6 +150,27 @@
 
             aside:nth-of-type(1) .noticiaAs{
                 border: 0;
+            }
+        }
+
+        @media screen and (min-width: 1000px){
+            .conteudoP{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .conteudoP img{
+                width: 70%;
+            }
+
+            .conteudoP .textos{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 30%;
+                max-height: 600px;
             }
         }
     </style>
@@ -179,7 +200,7 @@
     </div>
     <div id="telaMenu">
         <div id="headerMenu"> </div>
-        <a href="geekCategoria.html" class="linksMenu">MUNDO GEEK</a>
+        <a href="index.html" class="linksMenu">HOME</a>
         <a href="techCategoria.html" class="linksMenu">TECNOLOGIA</a>
         <a href="#" class="linksMenu">GAMES</a>
         <a href="#" class="linksMenu">SEGURANÇA</a>
@@ -230,13 +251,15 @@
                 <div class="tituloP">
                     <h2>Animes e Mangas</h2>
                 </div>
-                <img src="imgs/HellSing.jpg" alt="alucard de hellsing">
-                <div class="textos">
-                    <h3>Alucard Deixa o Cofre! Hellsing Corporation Anuncia Novo Plano de Marketing com Vampiro Voraz</h3>
-                    <p class="autor">Albert Feraz</p>
-                    <p class="resumo">
-                        Em uma reviravolta surpreendente no mundo das trevas, o que um dia foi temido como o último vampiro supremo agora emerge das sombras para assumir um papel improvável: o de influenciador da noite. Sob o lema "De Bebedor de Sangue a Influenciador da Noite", o misterioso ser noturno revelou sua verdadeira identidade ao mundo e busca redefinir sua imagem, tornando-se o rosto de uma marca única e intrigante.
-                    </p>
+                <div class="conteudoP">
+                    <img src="imgs/HellSing.jpg" alt="alucard de hellsing">
+                    <div class="textos">
+                        <h3>Alucard Deixa o Cofre! Hellsing Corporation Anuncia Novo Plano de Marketing com Vampiro Voraz</h3>
+                        <p class="autor">Albert Feraz</p>
+                        <p class="resumo">
+                            Em uma reviravolta surpreendente no mundo das trevas, o que um dia foi temido como o último vampiro supremo agora emerge das sombras para assumir um papel improvável: o de influenciador da noite. Sob o lema "De Bebedor de Sangue a Influenciador da Noite", o misterioso ser noturno revelou sua verdadeira identidade ao mundo e busca redefinir sua imagem, tornando-se o rosto de uma marca única e intrigante.
+                        </p>
+                    </div>
                 </div>
             </section>
         </article>
@@ -289,7 +312,7 @@
                     <input type="email" name="Imail" id="Imail" placeholder="Endereço De Email">
                 </fieldset>
                 <img src="imgs/hand4.png" alt="Mãozinha Cartoon" id="maoCartoon">
-                <button type="button"><img src="imgs/hand3.png" alt="Mãozinha" class="hand"> Enviar <img src="imgs/hand3.png" alt="Mãozinha" class="hand"></button>
+                <button class="btn" type="button"><img src="imgs/hand3.png" alt="Mãozinha" class="hand"> Enviar <img src="imgs/hand3.png" alt="Mãozinha" class="hand"></button>
             </div>
         </div>
     </main>

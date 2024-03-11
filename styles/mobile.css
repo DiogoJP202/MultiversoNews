@@ -407,6 +407,7 @@ button{
     border: 1px solid #000;
     border-radius: 0;
     box-shadow: 0 0 3px #000;
+    transition: 0.5s;
 }
 
 button > img{
@@ -415,6 +416,12 @@ button > img{
 
 button > img:nth-of-type(even){
     transform: scaleX(-1);
+}
+
+button:hover{
+    transition: 0.5s;
+    background-color: #000;
+    color: #fff;
 }
 
 footer{

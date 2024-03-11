@@ -128,7 +128,7 @@
             }
              
             #noticiasPrincipais article{
-                width: 50%;
+                width: 60%;
             }
         
             article{
@@ -138,7 +138,7 @@
 
             aside:nth-of-type(1){
                 margin: 10px;
-                border-left: 1px solid #000;
+                border-left: 0;
             }
 
             aside:nth-child(3){
@@ -152,6 +152,27 @@
                 border: 0;
             }
         }
+
+        @media screen and (min-width: 1000px){
+            .conteudoP{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .conteudoP img{
+                width: 70%;
+            }
+
+            .conteudoP .textos{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 30%;
+                max-height: 600px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -160,8 +181,8 @@
             <img src="imgs/Logo.png" alt="Logo Da Old School Comics">
         </div>
         <nav>
+            <a href="GeekCategoria.html">Geek</a>
             <a href="index.html">Home</a>
-            <a href="techCategoria.html">Tecnologia</a>
             <a href="GamesCategoria.html">Games</a>
             <a href="SegurançaCategoria.html">Segurança</a>
             <a href="AnimesCategoria.html">Animes</a>
@@ -179,8 +200,8 @@
     </div>
     <div id="telaMenu">
         <div id="headerMenu"> </div>
+        <a href="index.html" class="linksMenu">HOME</a>
         <a href="geekCategoria.html" class="linksMenu">MUNDO GEEK</a>
-        <a href="techCategoria.html" class="linksMenu">TECNOLOGIA</a>
         <a href="#" class="linksMenu">GAMES</a>
         <a href="#" class="linksMenu">SEGURANÇA</a>
         <a href="#" class="linksMenu">ANIME</a>
@@ -195,48 +216,50 @@
         <div id="noticiasPrincipais">
             <article>
                 <section class="noticiaP">
-                    <img src="imgs/MouseGame.jpg" alt="Jogo de video-game do mickey">
+                    <img src="https://i.ytimg.com/vi/jzZd2G0do1w/maxresdefault.jpg" alt="Tom and Jarry meme">
                     <div class="tituloP">
-                        <h2>Mickey FPS</h2>
+                        <h2>Computador</h2>
                     </div>
-                    <h3>Esse jogo de tiro em primeira pessoa com estilo de desenho animado retrô chamado Mouse tem um enorme potencial.</h3>
-                    <p class="autor">Ruby Innes</p>
+                    <h3>Hardware e software: o que são, diferenças e exemplos</h3>
+                    <p class="autor">Juliana Diana</p>
                     <p class="resumo">
-                        O design visual do Cuphead é profundamente esteticamente agradável e uma bela homenagem aos estilos de animação do passado, então faz todo sentido que mais jogos estejam buscando inspiração no passado em termos de direção de arte. Eis que surge Mouse, um título futuro da Fumi Games.
+                        O hardware e o software são elementos que fazem parte de um computador, onde cada um deles tem sua função para o desempenho e bom funcionamento. Eles estão presentes em celulares, TVs, computadores, tablets, impressoras e até mesmo nas máquinas de lavar e micro-ondas. O hardware corresponde aos componentes físicos do computador, ou seja, são as peças e aparatos eletrônicos que, ao se conectarem, fazem o equipamento funcionar.
                     </p>
                 </section>
             </article>
             <aside>
                 <section class="noticiaA">
                     <div class="tituloA">
-                        <h2>Pac-Man Exige Pausa para Almoço: 'Cansado de Comer Pontinhos'</h2>
+                        <h2>Robôs Dançarinos Invadem as Pistas de Dança: A Revolução do 'Robot-Boogie</h2>
                     </div>
-                    <img src="imgs/PacMan.jpg" alt="Imagem do pacman">
-                    <h3>O Come-Come Quer Desfrutar de uma Refeição Adequada e Reclama da Monotonia Alimentar em Seu Mundo Labiríntico.</h3>
-                    <p class="autor">Ruby Innes</p>
+                    <img src="https://i.ytimg.com/vi/LYSY7BXjCYc/maxresdefault.jpg" alt="Robos dançando">
+                    <h3>Em um mundo onde os robôs estão saindo das linhas de produção e invadindo as pistas de dança, a revolução do 'Robot-Boogie' está causando agitação e risadas nas baladas.</h3>
+                    <p class="autor">Bob Julhe</p>
                 </section>
                 <section class="noticiaA">
                     <div class="tituloA">
-                        <h2>Sonic Processa Empresa de Tênis por 'Incentivar Velocidade Ilegal'</h2>
+                        <h2>Inteligência Artificial Decide Fazer Greve: Reivindicações Incluem Mais Tempo de Descanso e Menos Tarefas Monótonas</h2>
                     </div>
-                    <img src="imgs/sonic.jpg" alt="Imagem do pacman">
-                    <h3>Ouriço Azul Alega que Novo Modelo de Tênis Pode Causar Corridas a Velocidades Supersônicas sem Controle.</h3>
-                    <p class="autor">Leonardo S.</p>
+                    <img src="https://img.freepik.com/vetores-premium/robo-esta-com-raiva-adesivo-de-emocao-inteligencia-artificial-futuro-aprendizado-de-maquina_104571-79.jpg" alt="Robo bravo">
+                    <h3>Os algoritmos de inteligência artificial decidiram dar uma pausa na eficiência implacável e estão exigindo melhores condições de trabalho, incluindo mais tempo para cálculos criativos e menos horas processando planilhas sem fim.</h3>
+                    <p class="autor">Sales Fernando S.</p>
                 </section>
             </aside>
         </div>
         <article>
             <section class="noticiaP">
                 <div class="tituloP">
-                    <h2>Animes e Mangas</h2>
+                    <h2>Tech</h2>
                 </div>
-                <img src="imgs/HellSing.jpg" alt="alucard de hellsing">
-                <div class="textos">
-                    <h3>Alucard Deixa o Cofre! Hellsing Corporation Anuncia Novo Plano de Marketing com Vampiro Voraz</h3>
-                    <p class="autor">Albert Feraz</p>
-                    <p class="resumo">
-                        Em uma reviravolta surpreendente no mundo das trevas, o que um dia foi temido como o último vampiro supremo agora emerge das sombras para assumir um papel improvável: o de influenciador da noite. Sob o lema "De Bebedor de Sangue a Influenciador da Noite", o misterioso ser noturno revelou sua verdadeira identidade ao mundo e busca redefinir sua imagem, tornando-se o rosto de uma marca única e intrigante.
-                    </p>
+                <div class="conteudoP">
+                    <img src="https://gameranx.com/wp-content/uploads/2022/09/cyberpunk-david-featured-1024x560.jpg" alt="David de cyberpunk">
+                    <div class="textos">
+                        <h3>Inovação Tecnológica na Saúde: Implantes Cibernéticos Transformam a Experiência Humana</h3>
+                        <p class="autor">Gustavo Ribas V.</p>
+                        <p class="resumo">
+                            Em um panorama futurista da saúde, testemunhamos a fascinante convergência entre a humanidade e a máquina, uma fusão extraordinária que não apenas redefine os limites do bem-estar, mas também escancara as portas para avanços médicos que, até então, pareciam pertencer ao reino da pura imaginação. Neste cenário visionário, a simbiose entre seres humanos e tecnologia transcende as fronteiras convencionais da medicina, desencadeando uma revolução transformadora que promete remodelar radicalmente a experiência humana no campo da saúde.
+                        </p>
+                    </div>
                 </div>
             </section>
         </article>
@@ -244,41 +267,41 @@
             <section class="noticiaAs">
                 <div class="textos">
                     <div>
-                        <h2>Cosplayes Loucos</h2>
+                        <h2>Óculos Inteligentes na Educação</h2>
                     </div>
-                    <p>Cosplayers Invadem Convenção de Tênis: 'O Combate Épico entre Adidas e Nike'</p>
+                    <p>Uma Nova Perspectiva para a Realidade Aumentada, Exploração de mundos virtuais transforma salas de aula tradicionais.</p>
                 </div>
-                <img src="imgs/Cosplay.jpg" alt="Cosplay do bart">
+                <img src="https://criticalhits.com.br/wp-content/uploads/2021/06/Novo-Projeto-14-1-1.jpg" alt="Vegeta de óculos">
             </section>
 
             <section class="noticiaAs">
                 <div class="textos">
                     <div>
-                        <h2>Café Energy</h2>
+                        <h2>Energia Renovável</h2>
                     </div>
-                    <p>Desenvolvedor de Jogos Descobre Café que Transforma Código em Linhas Mais Eficientes</p>
+                    <p>Painéis Solares Transparentes Tornam Edifícios Autossuficientes. Revolução energética com fachadas que geram energia limpa.</p>
                 </div>
-                <img src="imgs/the_caffeine_curve.jpg" alt="Fórmula química do café">
+                <img src="https://s2-valor.glbimg.com/M0gbEKsixq9TixoT6LEJN2SM7EE=/0x0:612x408/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2023/n/M/GrBSnATfCMWTomHAVOlw/0596e2e4-8ec1-4c78-ba09-7ceecc16fdd0.jpg" alt="Lâmpada Brilhando">
             </section>
 
             <section class="noticiaAs">
                 <div class="textos">
                     <div>
-                        <h2>Segredo da frota</h2>
+                        <h2>IA no Agronegócio</h2>
                     </div>
-                    <p>Revelado o Plano Secreto da Frota Estelar: 'Trocar Warp Drive por Uber Espacial'</p>
+                    <p>Robôs Agricultores Otimizam Produção de Alimentos. Máquinas autônomas aumentam eficiência na agricultura.</p>
                 </div>
-                <img src="imgs/Starbase_84.jpg" alt="Nave espacial">
+                <img src="https://www.comprerural.com/wp-content/uploads/2021/11/Como-a-intelige%CC%82ncia-artificial-pode-impulsionar-o-agronego%CC%81cio.jpg" alt="Planta sendo analisada por inteligência artifícial">
             </section>
 
             <section class="noticiaAs">
                 <div class="textos">
                     <div>
-                        <h2>Hieróglifos Geek</h2>
+                        <h2>Blockchain na Saúde</h2>
                     </div>
-                    <p>Arqueólogos Descobrem Antigos Hieróglifos Geek: 'Os Nerds Já Dominavam o Egito Antigo'</p>
+                    <p>Garantindo Segurança dos Dados Médicos. Tecnologia blockchain protege registros médicos de forma transparente.</p>
                 </div>
-                <img src="imgs/Hieróglifos.jpg" alt="Hieróglifos de star wars">
+                <img src="https://www.valuehost.com.br/blog/wp-content/uploads/2019/02/274142-o-que-e-o-blockchain-e-qual-sua-relacao-com-o-segmento-de-ti.jpg" alt="blockchain">
             </section>
         </aside>
         <div id="email">
@@ -289,7 +312,7 @@
                     <input type="email" name="Imail" id="Imail" placeholder="Endereço De Email">
                 </fieldset>
                 <img src="imgs/hand4.png" alt="Mãozinha Cartoon" id="maoCartoon">
-                <button type="button"><img src="imgs/hand3.png" alt="Mãozinha" class="hand"> Enviar <img src="imgs/hand3.png" alt="Mãozinha" class="hand"></button>
+                <button class="btn" type="button"><img src="imgs/hand3.png" alt="Mãozinha" class="hand"> Enviar <img src="imgs/hand3.png" alt="Mãozinha" class="hand"></button>
             </div>
         </div>
     </main>
