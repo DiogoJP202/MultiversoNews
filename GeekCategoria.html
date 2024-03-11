@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles/mobile.css" media="all">
     <link rel="stylesheet" href="mediaQueries.css">
     <style>
+        article{
+            margin: 10px;
+            border-bottom: 1px solid #000;
+        }
+
         .titulo{
             display: flex;
             flex-direction: column;
@@ -66,7 +71,14 @@
             font-size: 1.3em;
         }
 
+        aside{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .noticiaA{
+            max-width: 400px;
             box-shadow: 0px 0px 5px #000;
             border-radius: 10px;
         }
@@ -101,6 +113,23 @@
         .noticiaAs img{
             width: 75px;
             margin-left: 25px;
+        }
+
+        @media screen and (min-width: 800px){
+            #noticiasPrincipais{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+             
+            #noticiasPrincipais article{
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width: 800px){
+            
         }
     </style>
 </head>
@@ -142,38 +171,39 @@
         </div>
     </div>
     <main>
-        <article>
-            <section class="noticiaP">
-                <img src="imgs/MouseGame.jpg" alt="Jogo de video-game do mickey">
-                <div class="tituloP">
-                    <h2>Mickey FPS</h2>
-                </div>
-                <h3>Esse jogo de tiro em primeira pessoa com estilo de desenho animado retrô chamado Mouse tem um enorme potencial.</h3>
-                <p class="autor">Ruby Innes</p>
-                <p class="resumo">
-                    O design visual do Cuphead é profundamente esteticamente agradável e uma bela homenagem aos estilos de animação do passado, então faz todo sentido que mais jogos estejam buscando inspiração no passado em termos de direção de arte. Eis que surge Mouse, um título futuro da Fumi Games.
-                </p>
-            </section>
-        </article>
-        <aside>
-            <section class="noticiaA">
-                <div class="tituloA">
-                    <h2>Pac-Man Exige Pausa para Almoço: 'Cansado de Comer Pontinhos'</h2>
-                </div>
-                <img src="imgs/PacMan.jpg" alt="Imagem do pacman">
-                <h3>O Come-Come Quer Desfrutar de uma Refeição Adequada e Reclama da Monotonia Alimentar em Seu Mundo Labiríntico.</h3>
-                <p class="autor">Ruby Innes</p>
-            </section>
-
-            <section class="noticiaA">
-                <div class="tituloA">
-                    <h2>Sonic Processa Empresa de Tênis por 'Incentivar Velocidade Ilegal'</h2>
-                </div>
-                <img src="imgs/sonic.jpg" alt="Imagem do pacman">
-                <h3>Ouriço Azul Alega que Novo Modelo de Tênis Pode Causar Corridas a Velocidades Supersônicas sem Controle.</h3>
-                <p class="autor">Leonardo S.</p>
-            </section>
-        </aside>
+        <div id="noticiasPrincipais">
+            <article>
+                <section class="noticiaP">
+                    <img src="imgs/MouseGame.jpg" alt="Jogo de video-game do mickey">
+                    <div class="tituloP">
+                        <h2>Mickey FPS</h2>
+                    </div>
+                    <h3>Esse jogo de tiro em primeira pessoa com estilo de desenho animado retrô chamado Mouse tem um enorme potencial.</h3>
+                    <p class="autor">Ruby Innes</p>
+                    <p class="resumo">
+                        O design visual do Cuphead é profundamente esteticamente agradável e uma bela homenagem aos estilos de animação do passado, então faz todo sentido que mais jogos estejam buscando inspiração no passado em termos de direção de arte. Eis que surge Mouse, um título futuro da Fumi Games.
+                    </p>
+                </section>
+            </article>
+            <aside>
+                <section class="noticiaA">
+                    <div class="tituloA">
+                        <h2>Pac-Man Exige Pausa para Almoço: 'Cansado de Comer Pontinhos'</h2>
+                    </div>
+                    <img src="imgs/PacMan.jpg" alt="Imagem do pacman">
+                    <h3>O Come-Come Quer Desfrutar de uma Refeição Adequada e Reclama da Monotonia Alimentar em Seu Mundo Labiríntico.</h3>
+                    <p class="autor">Ruby Innes</p>
+                </section>
+                <section class="noticiaA">
+                    <div class="tituloA">
+                        <h2>Sonic Processa Empresa de Tênis por 'Incentivar Velocidade Ilegal'</h2>
+                    </div>
+                    <img src="imgs/sonic.jpg" alt="Imagem do pacman">
+                    <h3>Ouriço Azul Alega que Novo Modelo de Tênis Pode Causar Corridas a Velocidades Supersônicas sem Controle.</h3>
+                    <p class="autor">Leonardo S.</p>
+                </section>
+            </aside>
+        </div>
         <article>
             <section class="noticiaP">
                 <div class="tituloP">
