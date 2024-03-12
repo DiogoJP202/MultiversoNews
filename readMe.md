@@ -7,9 +7,13 @@
 
 ![image](https://github.com/DiogoJP202/MultiversoNews/assets/102389309/ed30a460-d2fe-4dd2-a13d-7e1848488982)
 
-![image](https://github.com/DiogoJP202/MultiversoNews/assets/102389309/8a729341-59ae-455d-b8fc-b3105732f0a5)
-
-Links:
+<h2>Tecnologias utilizadas:</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+</ul>
+<h2>Links:</h2>
 <ul>
   <li><a href="https://www.figma.com/file/B2MgozEuD6mQ6bdL1IYD1y/Black-And-White-Geek?type=design&node-id=0%3A1&mode=design&t=xitTUlLA5r7mYTjs-1">FIGMA</a></li>
   <li><a href="https://diogojp202.github.io/MultiversoNews/">Projeto</a></li>
